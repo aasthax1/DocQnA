@@ -1,0 +1,14 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+env/
+.env
+
+# VSCode
+.vscode/
+
+# Local data
+uploads/
+vectors/
+*.sqlite3
