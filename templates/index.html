@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DocQnA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>DocQnA</h1>
+
+        <h2>Upload PDF</h2>
+        <input type="file" id="pdfFile">
+        <button onclick="uploadPDF()">Upload</button>
+        <p id="uploadMsg"></p>
+
+        <h2>Ask a Question</h2>
+        <input type="text" id="question">
+        <button onclick="askQuestion()">Ask</button>
+        <p id="answer"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
